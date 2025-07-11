@@ -1,30 +1,21 @@
 import pandas as Pd
 import matplotlib.pyplot as Mp
 import seaborn as Sn
-
 File = Pd.read_csv(r"D:\Documents\Ds_Ml\marks.csv")
-# File.info()
-
 def Mean():
     print("Mean: ", File['Marks'].mean())
-# Mean()
 
 def Median():
-    # print(Sorted_File)
     print("Median :",File['Marks'].median())
-# Median()
 
 def Mode():
     print("Mode:\n", File['Marks'].mode())
-# Mode()
 
 def Standard_deviation():
     print("Standard Deviation: ", File['Marks'].std())
-# Standard_deviation()
 
 def Variance():
         print("Varience:",File['Marks'].var())
-# Varience()
 
 def Graph():
     Mp.figure(figsize=(12,8))
